@@ -1,8 +1,8 @@
 # firstapp/urls.py
 from django.urls import path
-from .views import index
+from . import views
 urlpatterns = [
-path('', index, name='index'),
+    path('', views.home, name= 'home'),
 ]
 # This might be needed, depending on your Django version
 app_name = "firstapp"

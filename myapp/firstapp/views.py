@@ -1,7 +1,8 @@
-from django.shortcuts import render
-# appname/views.py
-from django.http import HttpResponse
-def index(request):
-    return HttpResponse('Hello World! This came from the index view')
+from django.shortcuts import render, HttpResponse
 
 # Create your views here.
+
+def home(request):
+    return HttpResponse('Hello World! This came from the index view')
+
+
