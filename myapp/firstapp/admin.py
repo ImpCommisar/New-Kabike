@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import TodoItem, subject, IndexCard
+from .models import TodoItem, subject, IndexCard, locations
 
 class IndexCardInline(admin.TabularInline):
     model = IndexCard
@@ -32,3 +32,4 @@ class IndexCardAdmin(admin.ModelAdmin):
 admin.site.register(subject, subjectAdmin)
 admin.site.register(IndexCard, IndexCardAdmin)
 admin.site.register(TodoItem)
+admin.site.register(locations)
