@@ -43,7 +43,7 @@
                         <td> {{a.zipcode}} </td>
                         <td> {{a.city}} </td>
                         <td> {{a.country}} </td>
-                        <td> <a href = "{% url 'Geo_View' a.id %}"> Geocode!</a> </td>
+                        <td><a href="{%url 'GeoView' a.id %}"> Geocode!</a></td>
                     </tr>
 
                     {% endfor%}

@@ -26,8 +26,9 @@
                         <th>Zipcode</th>
                         <th>City</th>
                         <th>Country</th>
-                        <th>Geocode link</th>
-                       
+                        <th>Lat</th>
+                        <th>Lng</th>
+                        <th>Place id</th>
                     </tr>
                 </thead>
 
@@ -39,17 +40,14 @@
                         <td> {{location.zipcode}} </td>
                         <td> {{location.city}} </td>
                         <td> {{location.country}} </td>
+                        <td> {{lat}} </td>
+                        <td> {{lng}} </td>
+                        <td> {{place_id}} </td>
                     </tr>
                 </tbody>
 
                 
             </table>
-        {% endif %}
-     </div>
-
-
-
-
 </div>
 
 <!-- sample of style -->
